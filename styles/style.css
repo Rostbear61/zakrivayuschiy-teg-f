@@ -13,7 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-:root{
+:root {
   --heart_fill: FF0000;
 }
 .page {
@@ -79,7 +79,7 @@
   text-transform: uppercase;
   padding-block-start: 3px;
 }
-.header_text{
+.header_text {
   font-weight: 400;
   font-size: 23px;
   text-transform: uppercase;
@@ -96,7 +96,7 @@
   position: relative;
   height: 14px;
 }
-.theme-menu__button {  
+.theme-menu__button {
   height: 100%;
   border: none;
   background-color: transparent;
@@ -131,14 +131,14 @@
   opacity: 0.6;
   transition: width 0.2s;
 }
-.theme-menu__button:focus-visible::after{
+.theme-menu__button:focus-visible::after {
   width: 100%;
 }
 .theme-menu__button:disabled::before {
-  content: ''; 
+  content: '';
   position: absolute;
-  left: -15px; 
-  border: 8px solid transparent; 
+  left: -15px;
+  border: 8px solid transparent;
   border-left: 10px solid var(--accent_color);
   opacity: 0.6;
   animation: move_arrows 0.5s ease-in-out infinite alternate;
@@ -389,7 +389,6 @@
   color: var(--accent_color);
 }
 .dialog_content {
-  width: 100%;
   width: 353px;
   height: 191px;
   padding: 30px;
@@ -447,7 +446,7 @@
 }
 
 @media (width < 700px) {
-  .header{
+  .header {
     block-size: clamp(20.4375rem, 17.4808rem + 12.6154vw, 23rem);
   }
   .header__theme-menu {
