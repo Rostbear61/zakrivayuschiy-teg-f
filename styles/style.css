@@ -211,7 +211,7 @@
    0 -1px #fff;
 }
 @supports((text-stroke: 1px #FFF) or (-webkit-text-stroke: 1px #fff)) {
-  .card_image::after{
+  .card_image::after {
   -webkit-text-stroke: 1px #FFFFFF;
   text-stroke: 1px #FFF;
   text-shadow: none;
