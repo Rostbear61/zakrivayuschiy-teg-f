@@ -175,7 +175,7 @@
   filter: grayscale(0.8);
 }
 .opacity_filter {
-  filter: opacity(0.8);
+  filter: opacity(0.8) grayscale(0.5);
 }
 .blur_filter {
   filter: blur(0.5rem);
@@ -204,9 +204,21 @@
   color: var(--accent_color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
+  text-shadow:
+    -1px 0 #fff, 
+   0 1px #fff, 
+   1px 0 #fff, 
+   0 -1px #fff;
+}
+@supports((text-stroke: 1px #FFF) or (-webkit-text-stroke: 1px #fff)) {
+  .card_image::after{
   -webkit-text-stroke: 1px #FFFFFF;
   text-stroke: 1px #FFF;
+  text-shadow: none;
+  }
 }
+
+
 .card_content {
   margin: 25px;
   display: flex;
