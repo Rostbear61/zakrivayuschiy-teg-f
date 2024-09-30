@@ -8,6 +8,7 @@
   --page_bg_color: #f5f5f5;
   --accent_color: #000;
   --weight_font: 400;
+  --weight_font_title: 700;
   --bg_image: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
@@ -18,12 +19,12 @@
   --color_button_text: #fff;
   --heart_core: #000;
   --heart_main_body: #000;
-  --dialog_bg: #fff;
 }
 :root.theme-dark {
   --page_bg_color: #000;
   --accent_color: #00cc14;
   --weight_font: 465;
+  --weight_font_title: 785;
   --bg_image: repeating-linear-gradient(
       to right,
       #000 0 2px,
@@ -34,7 +35,6 @@
   --color_button_text: #00cc14;
   --heart_core: #ff0000;
   --heart_main_body: #ff0000;
-  --dialog_bg: #000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,6 +42,7 @@
     --page_bg_color: #f5f5f5;
     --accent_color: #000;
     --weight_font: 400;
+    --weight_font_title: 700;
     --bg_image: repeating-linear-gradient(
         to right,
         #d3d3d3 0 2px,
@@ -52,7 +53,6 @@
     --color_button_text: #fff;
     --heart_core: #000;
     --heart_main_body: #000;
-    --dialog_bg: #fff;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -60,6 +60,7 @@
     --page_bg_color: #000;
     --accent_color: #00cc14;
     --weight_font: 465;
+    --weight_font_title: 785;
     --bg_image: repeating-linear-gradient(
         to right,
         #000 0 2px,
@@ -70,6 +71,5 @@
     --color_button_text: #00cc14;
     --heart_core: #ff0000;
     --heart_main_body: #ff0000;
-    --dialog_bg: #000;
   }
 }

@@ -13,9 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-:root {
-  --heart_fill: FF0000;
-}
 .page {
   margin: 0 auto;
   max-width: 696px;
@@ -143,7 +140,7 @@
 .card_title {
   border-bottom: 2px solid var(--accent_color);
   padding: 5px 10px;
-  font-weight: 700;
+  font-variation-settings: 'wght' var(--weight_font_title);
   font-size: 18px;
 }
 .card_image {
@@ -183,7 +180,6 @@
   font-family: var(--accent-font), sans-serif;
   font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
   color: var(--accent_color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
@@ -214,18 +210,21 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  gap: 10px;
 }
 .card__icon-button {
-  block-size: 35px;
-  border: none;
+  block-size: 36px;
   background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  transition: outline 0.3s ease;
 }
 .card_like_heart {
   block-size: 100%;
-  --heart_fill: none;
 }
 .core {
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear 0.3s;
 }
 .main-body {
   transition: fill 0.3s linear;
@@ -267,11 +266,12 @@
 .like-icon.is-liked .sparks {
   animation: heart_sparks 0.3s forwards 0.3s ease-in;
 }
-.card__icon-button:focus,
-.card__icon-button:focus-visible {
+.card__icon-button:focus {
+  border: none;
   outline: none;
 }
 .card__icon-button:focus-visible {
+  border: none;
   outline: 2px solid var(--accent_color);
 }
 .card__like-button {
@@ -344,8 +344,12 @@
   height: 21px;
 }
 .dialog_save {
-  background-color: var(--dialog_bg);
-  color: var(--accent_color);
+  background-color: var(--page_bg_color);
+  color: var(--accent_color); 
+}
+.dialog_save::backdrop {
+  background-color: #000;
+  opacity: 0.75;
 }
 .dialog_content {
   margin: 0 auto;
@@ -380,7 +384,6 @@
 }
 .dialog_content_text {
   line-height: 150%;
-  height: 63px;
   max-width: 234px;
 }
 .dialog_button {
