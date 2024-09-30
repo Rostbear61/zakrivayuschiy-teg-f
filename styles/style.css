@@ -345,7 +345,7 @@
 }
 .dialog_save {
   background-color: var(--page_bg_color);
-  color: var(--accent_color); 
+  color: var(--accent_color);
 }
 .dialog_save::backdrop {
   background-color: #000;
