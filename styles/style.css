@@ -416,11 +416,18 @@
   .header_text {
     font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   }
+  .theme-menu__list {
+    margin-block-end: 30px;
+  }
+  .main_section {
+    margin-block-start: 100px;
+  }
   .card_content {
     margin: 20px 25px;
   }
   .card_image_pic_label {
-    right: clamp(0.8125rem, -0.0529rem + 3.6923vw, 1.5625rem);
+    top : clamp(1.25rem, 0.8894rem + 1.5385vw, 1.5625rem);
+    right: clamp(0.625rem, -0.4567rem + 4.6154vw, 1.5625rem);
   }
   .card_like {
     margin-block-start: 5px;
